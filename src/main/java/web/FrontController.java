@@ -51,6 +51,8 @@ public class FrontController extends HttpServlet
         {
             request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
+            Locale.setDefault(new Locale("US"));
+
             Command action = Command.fromPath(request, database);
 
             if (action instanceof CommandUnknown) {

@@ -21,7 +21,7 @@ public class ShowSVGCommand extends CommandUnprotectedPage
 
         for (int x = 0; x < 14; x++)
         {
-            svg.addRect(100 + 50 * x, 0, 600.0, 4.5);
+            svg.addRect(100 + 50 * x, 0, 400.0, 4.5);
         }
         request.setAttribute("svgdrawing", svg.toString());
         return pageToShow;
